@@ -1,0 +1,50 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+
+/* 헤더영역 */
+
+/* 메인영역 */
+.main{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%
+}
+.logo{
+    display: block;
+    padding: 88px 0px 44px 0px;
+    margin: 0px auto;
+    width: 350px;
+}
+.main__video{
+    padding: 16px;
+    background-color: white;
+    margin: 0px auto;
+    display: block;
+    box-shadow: 2px 2px 8px 8px rgba(10,10,10,0.3), 10px 10px 20px 20px rgba(10,10,10,0.4);
+}
+.main__video::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.entrance{
+    font-weight: 700;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    background-color: black;
+    margin: 0px auto;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
