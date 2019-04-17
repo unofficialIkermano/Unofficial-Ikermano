@@ -1,0 +1,231 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+/* 고정영역 */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.layout--center {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.col-1  {width: 8.33%;}
+.col-2  {width: 16.66%;}
+.col-3  {width: 25%;}
+.col-4  {width: 33.33%;}
+.col-5  {width: 41.66%;}
+.col-6  {width: 50%;}
+.col-7  {width: 58.33%;}
+.col-8  {width: 66.66%;}
+.col-9  {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Gutter 옵션 */
+.gutter--none {padding: 0;}
+.gutter--xxxs {padding: 0 1px;}
+.gutter--xxs  {padding: 0 5px;}
+.gutter--xs   {padding: 0 10px;}
+.gutter--sm   {padding: 0 15px;}
+.gutter--md   {padding: 0 20px;}
+.gutter--lg   {padding: 0 25px;}
+.gutter--xl   {padding: 0 30px;}
+.gutter--xxl  {padding: 0 35px;}
+.gutter--xxxl {padding: 0 40px;}
+
+
+/* 문단 정렬 */
+.right{
+    text-align: right;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+.track{
+    color: #3c3c3c;
+    font-size: 16px;
+    padding-top: 52px;
+    font-weight: 400;
+}
+
+
+/* 헤더영역 */
+header a{
+    color: white;
+    display: inline-block
+}
+header img{
+    width: 100px;
+    float: left;
+}
+ul{
+    float: right;
+}
+.list{
+    display: inline-block;
+    float: left;
+    padding: 0px 20px;
+}
+
+
+
+
+/* 메인영역 */
+.profile{
+    border: 0px solid coral;
+    padding-top: 64px;
+}
+.profile__img{
+    width: 630px;
+    border: 0px solid blue;
+    float: left;
+}
+
+.profile__img--main{
+    width: 610px;
+    padding: 0px 10px 20px 10px;
+}
+.profile__img--sub{
+    width: 190px;
+    padding: 0px 10px;
+    float: left;
+}
+
+
+.profile__text--name{
+    padding: 120px 0px 32px 0px;
+}
+.profile__content{
+    border: 0px solid blue;
+}
+.profile__text{
+    border: 0px solid green;
+    float: left;
+    padding-left: 30px;
+}
+.profile__text--sub{
+    color: #8d8d8d;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 44px;
+}
+.profile__text--main{
+    width: 532px;
+    color: #8d8d8d;
+    padding-bottom: 52px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.profile__text2--head{
+    font-size: 20px;
+    color: #3c3c3c;
+    padding-bottom: 20px;
+}
+.profile__text2--txt{
+    color: #8d8d8d;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 72px;
+}
+.profile__text3--a{
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* 앨범 앤 트랙 영역 */
+.album__title{
+    text-align: center;
+    font-family: Lobster;
+    font-size: 28px;
+    font-weight: 400;
+}
+.album__container{
+    border: 0px red solid;
+    width: 800px;
+    margin: 0px auto;
+}
+.album__img--box{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 1px rgba(0,0,0,.2) solid;
+    float: left;
+}
+.album__img--hover{
+    display: table;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.album__img--hover:hover{
+    opacity: 1;
+}
+
+.album__img--hoverbg{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    background-color: rgba(0,0,0,.8);
+    vertical-align: middle;
+    text-align: center;
+}
+.album__img--hoverbg a{
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    padding: 12px 40px;
+    border: 2px solid white;
+}
+
+.album__text{
+    border: 0px green solid;
+    width: 400px;
+    height: 400px;
+    float: left;
+    display: table;
+    box-sizing: border-box;
+}
+.album__text--tablecell{
+    border: 0px solid blue;
+    display: table-cell;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+
+.album__text--tablecell h3{
+    line-height: 1.33;
+    font-size: 24px;
+    color: #3c3c3c;
+    padding-bottom: 20px;
+}
+.album__text--tablecell p{
+    font-size: 20px;
+    color: #8d8d8d;
+}
+
+
+
